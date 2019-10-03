@@ -41,7 +41,7 @@
 			} else {
 				img = null;
 			}
-		} else { 
+		} else if($('input[name=logo]').prop("checked") == true){ 
 			var baseImg = new Image();
 			baseImg.src = 'https://gelehrtecrest.github.io/bp2ap/' + $('input[name=logo]:checked').val() + '.png';
 			img = new createjs.Bitmap(baseImg);
@@ -76,7 +76,7 @@
 			} else {
 				imgB = null;
 			}
-		} else { 
+		} else if($('input[name=logoB]').prop("checked") == true){ 
 			var baseImg = new Image();
 			baseImg.src = 'https://gelehrtecrest.github.io/bp2ap/' + $('input[name=logo]:checked').val() + '.png';
 			imgB = new createjs.Bitmap(baseImg);
@@ -110,7 +110,7 @@
 			} else {
 				imgC = null;
 			}
-		} else { 
+		} else if($('input[name=logoC]').prop("checked") == true){ 
 			var baseImg = new Image();
 			baseImg.src = 'https://gelehrtecrest.github.io/bp2ap/' + $('input[name=logo]:checked').val() + '.png';
 			imgC = new createjs.Bitmap(baseImg);
